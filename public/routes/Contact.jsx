@@ -1,108 +1,41 @@
-
-import useForm from '../hooks/useForm'
-import styles from "./styles/contact.module.css"
+import React, { useRef, useState } from 'react'
 
 const Contact = () => {
+    const [name, setName] = useState("")
+    const [message, setMessage] = useState("")
 
-  const {
-    registerData,
-    // onChange,
-    // disabled,
-    handleSubmit,
-    // errors
-  } = useForm()
+    const handleSubmit = () => {
 
-  const { userName, position, email, phone, reason } = registerData
 
-  return (
 
-    <div>
+    }
+    console.log(message, name);
 
-      <form
-        name="contact-v1"
-        method="post"
-        data-netlify="true"
-        // onSubmit=""
-        data-netlify-honeypot="bot-field"
-        hidden
-        className={styles.form}
-      >
+    return (
+        <>
+            <form method='post' onSubmit={handleSubmit}  >
 
-        <input
-          type="text"
-          name="userName"
-          placeholder='Name'
-          // // onChange={onChange}
-          // value={userName}
-          required
-        />
-        {/* {
-          errors.userName &&
-          <span>{errors.userName} </span>
-        } */}
+                <input
+                    type="text"
+                    id='name'
+                    name='name'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
 
-        <input
-          type="text"
-          name="position"
-          placeholder='Job position'
-          // // onChange={onChange}
-          // value={position}
-          maxLength={13}
-          required
-        />
-        {/* {
-          errors.position &&
-          <span>{errors.position} </span>
-        } */}
+                <input
+                    id='email'
+                    type="email"
+                    name='email'
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                />
 
-        <input
-          type="email"
-          name="email"
-          placeholder='E-mail'
-          // // onChange={onChange}
-          // value={email}
-          required
-        />
-        {/* {
-          errors.email &&
-          <span>{errors.email} </span>
-        } */}
+                <button type='submit'  >submit</button>
 
-        <input
-          type="number"
-          name="phone"
-          placeholder='Phone Number'
-          // // onChange={onChange}
-          // value={phone}
-          required
-        />
-        {/* {
-          errors.phone &&
-          <span>{errors.phone} </span>
-        } */}
-
-        <input
-          type="text"
-          name="reason"
-          placeholder='Please leave your message'
-          // // onChange={onChange}
-          // value={reason}
-          maxLength={30}
-          required
-        />
-        {/* {
-          errors.reason &&
-          <span>{errors.reason} </span>
-        } */}
-
-        <button 
-        // disabled={!disabled}
-        > Submit </button>
-
-      </form>
-
-    </div>
-  )
+            </form>
+        </>
+    )
 }
 
 export default Contact
