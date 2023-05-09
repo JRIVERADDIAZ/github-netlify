@@ -4,16 +4,11 @@ const Contact = () => {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
 
-    const handleSubmit = () => {
-
-
-
-    }
     console.log(email, name);
 
     return (
         <>
-            <form onSubmit={handleSubmit} name="contact"  method='POST' netlify >
+            <form onSubmit={handleSubmit} name="contact" method='POST'>
 
                 <input
                     type="text"
