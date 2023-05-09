@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 
 const Contact = () => {
     const [name, setName] = useState("")
-    const [message, setMessage] = useState("")
+    const [email, setEmail] = useState("")
 
     const handleSubmit = () => {
 
@@ -27,7 +27,7 @@ const Contact = () => {
                     id='email'
                     type="email"
                     name='email'
-                    value={message}
+                    value={email}
                     onChange={(e) => setMessage(e.target.value)}
                 />
 
