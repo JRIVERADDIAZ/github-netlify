@@ -13,7 +13,7 @@ const Contact = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit} name="contact"  method='POST' >
+            <form onSubmit={handleSubmit} name="contact"  method='POST' netlify >
 
                 <input
                     type="text"
