@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <>
             <form name="contact" method='POST'>
-
+                <input type="hidden" name='form-name' value="contact" />
                 <input
                     type="text"
                     id='name'
