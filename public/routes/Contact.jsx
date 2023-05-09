@@ -9,7 +9,7 @@ const Contact = () => {
 
 
     }
-    console.log(message, name);
+    console.log(email, name);
 
     return (
         <>
@@ -28,7 +28,7 @@ const Contact = () => {
                     type="email"
                     name='email'
                     value={email}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <button type='submit'  >submit</button>
