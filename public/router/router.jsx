@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 
 import Home from '../routes/Home'
-import LayoutPublic from '../LayoutPublic'
-
-import About from '../routes/About'
-import Projects from '../routes/Projects'
-import Posts from '../routes/Posts'
-import Contact from '../routes/Contact'
-import Resume from '../routes/Resume'
+const Contact = lazy(() => delayForDemo(import('../routes/Contact')))
+const About = lazy(() => delayForDemo(import('../routes/About')))
+const Projects = lazy(() => delayForDemo(import('../routes/Projects')))
+const Resume = lazy(() => delayForDemo(import('../routes/Resume')))
+const Post = lazy(() => delayForDemo(import('../routes/Posts')))
 
 import RouterError from '../routes/RouterError'
+import Loading from '../routes/Loading'
+
+import LayoutPublic from '../LayoutPublic'
 
 const router = createBrowserRouter([
     {
@@ -23,27 +24,45 @@ const router = createBrowserRouter([
                 children: [{
                     path: "/",
                     index: true,
-                    element: <Home />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <Home />
+                        </Suspense>)
                 },
                 {
                     path: "/about",
-                    element: <About />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <About />
+                        </Suspense>)
                 },
                 {
                     path: "/projects",
-                    element: <Projects />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <Projects />
+                        </Suspense>)
                 },
                 {
                     path: "/contact",
-                    element: <Contact />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <Contact />
+                        </Suspense>)
                 },
                 {
                     path: "/posts",
-                    element: <Posts />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <Post />
+                        </Suspense>)
                 },
                 {
                     path: "/resume",
-                    element: <Resume />
+                    element: (
+                        <Suspense fallback={<Loading />}  >
+                            <Resume />
+                        </Suspense>)
                 },
                 ]
             }
@@ -52,3 +71,9 @@ const router = createBrowserRouter([
 ])
 
 export default router
+
+async function delayForDemo(promise) {
+    return new Promise(resolve => {
+        setTimeout(resolve, 2000);
+    }).then(() => promise);
+}

@@ -1,0 +1,60 @@
+/* 320px — 480px: Mobile devices test width 400 */
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: portrait) {}
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: landscape) {}
+
+/* 481px — 768px: iPads, Tablets test width 624 */
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: portrait) {
+
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: landscape) {
+
+}
+
+/* 769px — 1024px: Small screens, laptops test width  897 */
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: portrait) {
+    .home-front-end-image {
+        width: 67vh;
+        height: 97vh;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: landscape) {
+    .home-front-end-image {
+        width: 68vh;
+        height: 97vh;
+        position: relative;
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens test width  1113  */
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: portrait) {
+    .home-front-end-image {
+        width: 73vh;
+        height: 97vh;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: landscape) {
+    .home-front-end-image {
+        width: 73vh;
+        height: 97vh;
+        position: relative;
+    }
+}
+
+/* 1201px and more —  Extra large screens, TV  */
+
+@media screen and (min-width:1201px) {
+    .home-front-end-image {
+        width: 100%;
+        height: 100%;
+    }
+}

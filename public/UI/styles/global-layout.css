@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+portrait: The page or element is displayed in portrait mode, where the height is greater than the width.
+landscape: The page or element is displayed in landscape mode, where the width is greater than the height. 
+*/
+
+/*
+320px: Mobile devices test width 170 or less
+*/
+
+@media screen and (max-width:320px) and (orientation: portrait) {
+
+    .global-layout {
+        background-color: rgb(37, 37, 167);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 1;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .contain-global-layout {
+        display: none;
+        grid-row: 1 / 2;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(93, 93, 98);
+    }
+
+    .footer-global-layout {
+        display: none;
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        background-color: rgb(70, 52, 160);
+    }
+
+}
+
+@media screen and (max-width:320px) and (orientation: landscape) {
+
+    .global-layout {
+        background-color: rgb(37, 37, 167);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 1;
+        height: 100vh;
+        display: none;
+    }
+
+    .contain-global-layout {
+        display: none;
+        grid-row: 1 / 2;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(93, 93, 98);
+    }
+
+    .footer-global-layout {
+        display: none;
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        background-color: rgb(70, 52, 160);
+    }
+
+}
+
+/*
+320px — 480px: Mobile devices test width 400
+*/
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: portrait) {
+
+    .global-layout {
+        background-color: rgb(37, 37, 167);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 1;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .contain-global-layout {
+        display: none;
+        grid-row: 1 / 2;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(93, 93, 98);
+    }
+
+    .footer-global-layout {
+        display: none;
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        background-color: rgb(70, 52, 160);
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: landscape) {
+
+    .global-layout {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr, 1fr;
+        background-color: blueviolet;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 1;
+        grid-column: 1/ 2;
+        height: 100vh;
+        /* display: none */
+    }
+
+    .contain-global-layout {
+        grid-row: 2 / 3;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(69, 69, 70);
+        display: none;
+
+    }
+
+    .footer-global-layout {
+        grid-row: 3 / 3;
+        grid-column: 1 / 1;
+        background-color: azure;
+        display: none;
+    }
+
+}
+
+/* 
+481px — 768px: iPads, Tablets test width 624
+*/
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: portrait) {
+
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 1;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .contain-global-layout {
+        display: none;
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .footer-global-layout {
+        display: none;
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        background-color: rgb(70, 52, 160);
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: landscape) {
+
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 1;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .contain-global-layout {
+        display: none;
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .footer-global-layout {
+        display: none;
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        background-color: rgb(70, 52, 160);
+    }
+
+}
+
+/* 
+769px — 1024px: Small screens, laptops test width  897
+*/
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: portrait) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+        
+    }
+
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: landscape) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+    }
+
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}
+
+/* 
+1025px — 1200px: Desktops, large screens test width  1113 
+*/
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: portrait) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+        
+    }
+
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: landscape) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+        
+    }
+
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}
+
+/*
+1201px and more —  Extra large screens, TV 
+*/
+
+@media screen and (min-width:1201px) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+        
+    }
+    
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+        overflow: scroll;
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}

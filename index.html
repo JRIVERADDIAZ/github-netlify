@@ -8,17 +8,24 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+  </style>
+  <link rel="stylesheet" href="./public/routes/styles/contact.css">
   <title>Vite App</title>
 </head>
 
 <body>
   <div id="app"></div>
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-<div>
-  <input 
-  type="text" id="name" name="name">
-  <input 
-  type= "email" id="email" name="email">
+    <div>
+      <input type="text" id="name" name="name" hidden>
+      <input type="email" id="email" name="email" hidden>
+      <input type='text' id='position' name='position' hidden/>
+      <textarea name="" id="" cols="30" rows="10" hidden></textarea>
     </div>
   </form>
   <script type="module" src="/main.jsx"></script>
