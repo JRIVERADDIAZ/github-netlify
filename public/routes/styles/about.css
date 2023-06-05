@@ -1,0 +1,16 @@
+.about-container {
+   padding: 3vh;
+}
+
+p {
+    font-size: 3vh;
+    width: 59vw;
+    text-align: center;
+    padding: 3vw;
+}
+
+h5 {
+    text-align: center;
+    font-size: 4vh;
+}
+

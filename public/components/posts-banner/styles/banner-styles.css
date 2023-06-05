@@ -1,0 +1,69 @@
+/* 320px — 480px: Mobile devices test width 400 */
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: portrait) {}
+
+@media screen and (min-width:320px) and (max-width: 480px) and (orientation: landscape) {}
+
+/* 481px — 768px: iPads, Tablets test width 624 */
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: portrait) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) and (orientation: landscape) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+/* 769px — 1024px: Small screens, laptops test width  897 */
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: portrait) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px)and (orientation: landscape) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens test width  1113  */
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: portrait) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px)and (orientation: landscape) {
+    .project-title {
+        font-size: 2vh;
+        text-align: center;
+    }
+}
+
+/* 1201px and more —  Extra large screens, TV  */
+
+@media screen and (min-width:1201px) and (orientation: portrait) {
+    .project-title {
+        font-size: 3vh;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1201px) and (orientation: landscapE) {
+    .project-title {
+        font-size: 3vh;
+        text-align: center;
+    }
+}

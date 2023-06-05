@@ -25,49 +25,13 @@
 /* 1201px and more —  Extra large screens, TV  */
 
 @media screen and (min-width:1201px) and (orientation: portrait) {
-
-    .projects-container {
-        display: grid;
-        gap: 4vh;
-        width: 54vw;
-        position: relative;
-        top: 0vh;
-        left: 6vw;
-        grid-auto-rows: 29vh;
-        grid-template-columns: repeat(auto-fill, minmax(min(12vw, 10vw), 1fr));
+    .project-title {
+        font-size: 2vh;
     }
-
-    .project-content {
-        background-color: #00ffbb;
-        border-radius: 11px;
-        border: blue;
-        width: 12vw;
-        height: 20vh;
-    }
-
 }
 
-@media screen and (min-width:1201px) and (orientation: landscape) {
-
-
-    .projects-container {
-        display: grid;
-        gap: 4vh;
-        width: 54vw;
-        position: relative;
-        top: 4vh;
-        left: 6vw;
-        grid-auto-rows: 29vh;
-        scrollbar-color: rebeccapurple green;
-        grid-template-columns: repeat(auto-fill, minmax(min(12vw, 10vw), 1fr));
+@media screen and (min-width:1201px) and (orientation: landscapE) {
+    .project-title {
+        font-size: 2vh;
     }
-
-    .project-content {
-        background-color: #00ffbb;
-        border-radius: 11px;
-        border: blue;
-        width: 12vw;
-        height: 30vh;
-    }
-
 }

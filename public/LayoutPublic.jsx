@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 import NavBar from './UI/NavBar'
 import Footer from './components/footer/Footer'
 
-import Loading from  './routes/Loading'
+import Loading from './components/loader/Loading'
 
 import './UI/styles/global-layout.css'
 

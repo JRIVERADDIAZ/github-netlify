@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    
+
 }
 
 body::-webkit-scrollbar {
@@ -251,7 +251,7 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-row: 1 / 2;
         grid-column: 1/ 2;
         height: 100vh;
-        
+
     }
 
     .contain-global-layout {
@@ -260,6 +260,11 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-column: 2 / 4;
         height: 100vh;
         background-color: rgb(148, 148, 150);
+        overflow: scroll;
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
     }
 
     .footer-global-layout {
@@ -292,6 +297,11 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-column: 2 / 4;
         height: 100vh;
         background-color: rgb(148, 148, 150);
+        overflow: scroll;
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
     }
 
     .footer-global-layout {
@@ -320,7 +330,7 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-row: 1 / 2;
         grid-column: 1/ 2;
         height: 100vh;
-        
+
     }
 
     .contain-global-layout {
@@ -329,6 +339,11 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-column: 2 / 4;
         height: 100vh;
         background-color: rgb(148, 148, 150);
+        overflow: scroll;
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
     }
 
     .footer-global-layout {
@@ -353,7 +368,7 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-row: 1 / 2;
         grid-column: 1/ 2;
         height: 100vh;
-        
+
     }
 
     .contain-global-layout {
@@ -362,6 +377,7 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-column: 2 / 4;
         height: 100vh;
         background-color: rgb(148, 148, 150);
+        overflow: scroll;
     }
 
     .contain-global-layout::-webkit-scrollbar {
@@ -380,7 +396,7 @@ landscape: The page or element is displayed in landscape mode, where the width i
 1201px and more —  Extra large screens, TV 
 */
 
-@media screen and (min-width:1201px) {
+@media screen and (min-width:1201px) and (orientation: portrait) {
     .global-layout {
         background-color: rgb(227, 227, 232);
         height: 100%;
@@ -389,14 +405,52 @@ landscape: The page or element is displayed in landscape mode, where the width i
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .navbar-global-layout {
         grid-row: 1 / 2;
         grid-column: 1/ 2;
         height: 100vh;
-        
+
     }
-    
+
+    .contain-global-layout {
+        /* display: none; */
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        height: 100vh;
+        background-color: rgb(148, 148, 150);
+        overflow: scroll;
+    }
+
+    .contain-global-layout::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-global-layout {
+        /* display: none; */
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        background-color: rgb(123, 123, 123);
+    }
+}
+
+@media screen and (min-width:1201px) and (orientation: landscape) {
+    .global-layout {
+        background-color: rgb(227, 227, 232);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar-global-layout {
+        grid-row: 1 / 2;
+        grid-column: 1/ 2;
+        height: 100vh;
+
+    }
+
     .contain-global-layout {
         /* display: none; */
         grid-row: 1 / 2;

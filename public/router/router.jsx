@@ -9,7 +9,7 @@ const Resume = lazy(() => delayForDemo(import('../routes/Resume')))
 const Post = lazy(() => delayForDemo(import('../routes/Posts')))
 
 import RouterError from '../routes/RouterError'
-import Loading from '../routes/Loading'
+import Loading from '../components/loader/Loading'
 
 import LayoutPublic from '../LayoutPublic'
 
